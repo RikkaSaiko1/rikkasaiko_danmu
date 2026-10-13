@@ -38,6 +38,11 @@ export const HTML_TEMPLATE = /* html */ `
     <style>${responsiveCssContent}</style>
     <style>${themesCssContent}</style>
     
+    <!-- Vercel Web Analytics -->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body data-theme="globals.uiTheme">
     ${iconsSpriteContent}
